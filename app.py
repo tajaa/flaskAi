@@ -73,5 +73,10 @@ def prompt_to_pallete():
 # return list of colors
 
 
+@app.route("/images")
+def get_images():
+    return render_template("images.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
